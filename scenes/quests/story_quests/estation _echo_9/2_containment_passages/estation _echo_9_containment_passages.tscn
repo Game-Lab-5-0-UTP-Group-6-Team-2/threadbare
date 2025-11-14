@@ -1,8 +1,9 @@
-[gd_scene load_steps=18 format=4 uid="uid://dojmg678if7kt"]
+[gd_scene load_steps=22 format=4 uid="uid://dojmg678if7kt"]
 
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_y2ulw"]
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="2_xk8jj"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="3_5m40t"]
+[ext_resource type="SpriteFrames" uid="uid://taw4lfn8cx5c" path="res://scenes/quests/story_quests/estation _echo_9/player_components/Dr _echo_9_player.tres" id="4_xk8jj"]
 [ext_resource type="PackedScene" uid="uid://d37mebu7atru7" path="res://scenes/game_elements/characters/enemies/guard/guard.tscn" id="5_sso81"]
 [ext_resource type="SpriteFrames" uid="uid://cduc8ov5xwh2f" path="res://scenes/quests/story_quests/estation _echo_9/2_containment_passages/containment_passages_components/estation _echo_9_guard_enemy.tres" id="6_y2ulw"]
 [ext_resource type="PackedScene" uid="uid://dua6mynlw2ptw" path="res://scenes/game_elements/props/checkpoint/checkpoint.tscn" id="7_nk73w"]
@@ -12,6 +13,7 @@
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="11_mbj01"]
 [ext_resource type="Resource" uid="uid://b0w4tr5rqmsmt" path="res://scenes/quests/story_quests/estation _echo_9/2_containment_passages/containment_passages_components/estation _echo_9_collected.dialogue" id="12_xk8jj"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="13_y7rd3"]
+[ext_resource type="Shader" uid="uid://di1yvo812ri4x" path="res://scenes/quests/story_quests/estation _echo_9/0_intro/Shader/estation _echo_9_shader.gdshader" id="14_xk8jj"]
 [ext_resource type="Resource" uid="uid://8c4fwnbsfwar" path="res://scenes/quests/story_quests/estation _echo_9/2_containment_passages/containment_passages_components/estation _echo_9_containment_passages.dialogue" id="14_y2ulw"]
 
 [sub_resource type="Curve2D" id="Curve2D_2o4xt"]
@@ -32,6 +34,13 @@ size = Vector2(168.25, 122)
 [sub_resource type="Resource" id="Resource_ggm4i"]
 script = ExtResource("11_mbj01")
 metadata/_custom_type_script = "uid://bgmwplmj3bfls"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5m40t"]
+shader = ExtResource("14_xk8jj")
+
+[sub_resource type="QuadMesh" id="QuadMesh_6dfrd"]
+size = Vector2(1280, 720)
+center_offset = Vector3(640, 360, 0)
 
 [node name="StealthTemplateLevel" type="Node2D"]
 y_sort_enabled = true
@@ -57,6 +66,7 @@ tile_set = ExtResource("2_xk8jj")
 
 [node name="Player" parent="." instance=ExtResource("3_5m40t")]
 position = Vector2(131, 463)
+sprite_frames = ExtResource("4_xk8jj")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 process_mode = 3
@@ -490,7 +500,7 @@ debug_color = Color(0, 0, 0, 0.42)
 
 [node name="CollectibleItem" parent="." instance=ExtResource("10_bt8re")]
 position = Vector2(2900, 404)
-next_scene = "uid://0nixxfiocbn0"
+next_scene = "uid://duwsec4rmvqmk"
 item = SubResource("Resource_ggm4i")
 collected_dialogue = ExtResource("12_xk8jj")
 
@@ -499,5 +509,13 @@ position = Vector2(-1452, 20)
 script = ExtResource("13_y7rd3")
 dialogue = ExtResource("14_y2ulw")
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_5m40t")
+position = Vector2(-2, -5)
+mesh = SubResource("QuadMesh_6dfrd")
 
 [connection signal="ready" from="Cinematic" to="Cinematic" method="_on_ready"]
