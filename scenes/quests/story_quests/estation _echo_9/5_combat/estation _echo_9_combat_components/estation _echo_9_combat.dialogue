@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+
+~ start
+IA: Entidad detectada. Origen: desconocido. Producción de biomasa activa.
+Elara: Perfecto... alguien está cocinando dentro del sistema.
+=> END
+
+~ well_done
+Elara: ¡Lo tengo! El primer núcleo está asegurado.
+IA: Núcleo estabilizado. Restaurando energía a este sector.
+=> END
