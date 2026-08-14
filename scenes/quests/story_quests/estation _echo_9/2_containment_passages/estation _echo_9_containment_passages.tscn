@@ -1212,8 +1212,8 @@ metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="CanvasLayer"]
 material = SubResource("ShaderMaterial_5m40t")
-position = Vector2(-2, -5)
-scale = Vector2(1.059375, 1.2458333)
+position = Vector2(-255.99998, -129)
+scale = Vector2(1.4804688, 1.4680555)
 mesh = SubResource("QuadMesh_6dfrd")
 
 [connection signal="ready" from="Cinematic" to="Cinematic" method="_on_ready"]
