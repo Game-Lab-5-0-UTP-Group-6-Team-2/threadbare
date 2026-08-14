@@ -2263,8 +2263,8 @@ metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="CanvasLayer"]
 material = SubResource("ShaderMaterial_kla0l")
-position = Vector2(-490, -110)
-scale = Vector2(1.0062499, 0.99861115)
+position = Vector2(-490, -463)
+scale = Vector2(1.6257813, 2.2069445)
 mesh = SubResource("QuadMesh_3op63")
 
 [node name="Signals" type="Node2D" parent="."]
