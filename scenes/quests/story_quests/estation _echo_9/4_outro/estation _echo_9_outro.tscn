@@ -54,7 +54,7 @@ autoplay = "idle"
 [node name="Cinematic" type="Node2D" parent="."]
 script = ExtResource("4_3ww6s")
 dialogue = ExtResource("5_fa4q6")
-next_scene = "uid://dojmg678if7kt"
+next_scene = "uid://cufkthb25mpxy"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
