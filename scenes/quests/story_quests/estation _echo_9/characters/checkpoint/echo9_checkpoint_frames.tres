@@ -1,0 +1,122 @@
+[gd_resource type="SpriteFrames" load_steps=18 format=3]
+
+[ext_resource type="Texture2D" path="res://scenes/quests/story_quests/estation _echo_9/characters/checkpoint/echo9_checkpoint_appear.png" id="1_appear"]
+[ext_resource type="Texture2D" path="res://scenes/quests/story_quests/estation _echo_9/characters/checkpoint/echo9_checkpoint_idle.png" id="2_idle"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_appear0"]
+atlas = ExtResource("1_appear")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_appear1"]
+atlas = ExtResource("1_appear")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_appear2"]
+atlas = ExtResource("1_appear")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_appear3"]
+atlas = ExtResource("1_appear")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_appear4"]
+atlas = ExtResource("1_appear")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_appear5"]
+atlas = ExtResource("1_appear")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_appear6"]
+atlas = ExtResource("1_appear")
+region = Rect2(1152, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_appear7"]
+atlas = ExtResource("1_appear")
+region = Rect2(1344, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_appear8"]
+atlas = ExtResource("1_appear")
+region = Rect2(1536, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle0"]
+atlas = ExtResource("2_idle")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle1"]
+atlas = ExtResource("2_idle")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle2"]
+atlas = ExtResource("2_idle")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle3"]
+atlas = ExtResource("2_idle")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle4"]
+atlas = ExtResource("2_idle")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle5"]
+atlas = ExtResource("2_idle")
+region = Rect2(960, 0, 192, 192)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_appear0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_appear1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_appear2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_appear3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_appear4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_appear5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_appear6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_appear7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_appear8")
+}],
+"loop": false,
+"name": &"appear",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle5")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]

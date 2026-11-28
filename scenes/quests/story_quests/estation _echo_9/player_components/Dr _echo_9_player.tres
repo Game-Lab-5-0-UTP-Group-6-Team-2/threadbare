@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=43 format=3 uid="uid://taw4lfn8cx5c"]
+[gd_resource type="SpriteFrames" load_steps=39 format=3 uid="uid://taw4lfn8cx5c"]
 
 [ext_resource type="Texture2D" uid="uid://b2r7j86d2kpxo" path="res://scenes/quests/story_quests/estation _echo_9/player_components/Gemini_Generated_Image_v37xk6v37xk6v37x.png" id="1_rf5km"]
 [ext_resource type="Texture2D" uid="uid://cnqk78c1n05wr" path="res://scenes/quests/story_quests/estation _echo_9/player_components/DrEla_Die.png" id="4_07f23"]
@@ -33,10 +33,6 @@ region = Rect2(0, 0, 192, 192)
 atlas = ExtResource("4_07f23")
 region = Rect2(192, 0, 192, 192)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_spf55"]
-atlas = ExtResource("4_07f23")
-region = Rect2(384, 0, 192, 192)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_i44vv"]
 atlas = ExtResource("4_07f23")
 region = Rect2(576, 0, 192, 192)
@@ -44,10 +40,6 @@ region = Rect2(576, 0, 192, 192)
 [sub_resource type="AtlasTexture" id="AtlasTexture_d1vph"]
 atlas = ExtResource("4_07f23")
 region = Rect2(768, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_54uhg"]
-atlas = ExtResource("4_07f23")
-region = Rect2(0, 192, 192, 192)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p0yy4"]
 atlas = ExtResource("4_07f23")
@@ -61,10 +53,6 @@ region = Rect2(384, 192, 192, 192)
 atlas = ExtResource("4_07f23")
 region = Rect2(576, 192, 192, 192)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_tg064"]
-atlas = ExtResource("4_07f23")
-region = Rect2(768, 192, 192, 192)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_x1dvp"]
 atlas = ExtResource("4_07f23")
 region = Rect2(0, 384, 192, 192)
@@ -72,10 +60,6 @@ region = Rect2(0, 384, 192, 192)
 [sub_resource type="AtlasTexture" id="AtlasTexture_csvky"]
 atlas = ExtResource("4_07f23")
 region = Rect2(192, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nnwia"]
-atlas = ExtResource("4_07f23")
-region = Rect2(384, 384, 192, 192)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c0mpg"]
 atlas = ExtResource("4_07f23")

@@ -1,0 +1,12 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scenes/quests/story_quests/estation _echo_9/skin/echo9_skin.gd" id="1_skin"]
+[ext_resource type="SpriteFrames" path="res://scenes/quests/story_quests/estation _echo_9/characters/checkpoint/echo9_checkpoint_frames.tres" id="2_checkpoint"]
+[ext_resource type="SpriteFrames" path="res://scenes/quests/story_quests/estation _echo_9/characters/guard_circle/echo9_guard_circle_frames.tres" id="3_circle"]
+[ext_resource type="SpriteFrames" path="res://scenes/quests/story_quests/estation _echo_9/characters/guard_long/echo9_guard_long_frames.tres" id="4_long"]
+
+[node name="Echo9Skin" type="Node"]
+script = ExtResource("1_skin")
+checkpoint_frames = ExtResource("2_checkpoint")
+guard_circle_frames = ExtResource("3_circle")
+guard_long_frames = ExtResource("4_long")
