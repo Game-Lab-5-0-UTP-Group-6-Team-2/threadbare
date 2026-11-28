@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Quest" load_steps=3 format=3 uid="uid://dr20qcq0o6qdx"]
+[gd_resource type="Resource" script_class="Quest" load_steps=3 format=3]
 
 [ext_resource type="Script" uid="uid://dts1hwdy3phin" path="res://scenes/menus/storybook/components/quest.gd" id="1_quest"]
 [ext_resource type="SpriteFrames" uid="uid://cbpl4wtrlalk4" path="res://scenes/quests/story_quests/estation _echo_9/player_components/estation _echo_9_player.tres" id="2_frames"]
@@ -8,7 +8,7 @@ script = ExtResource("1_quest")
 title = "Estación Echo 9"
 description = "La estación Echo 9 perdió contacto hace setenta y dos horas y no hay señales vitales. La doctora Voss debe restablecer los tres núcleos de energía biológica y reactivar la IA central, evitando a los restos del personal... que ya no están estables."
 authors = Array[String](["Grupo 2 - UTP"])
-affiliation = "Endles"
+affiliation = "UTP"
 first_scene = "uid://k8k7u7lnllbq"
 sprite_frames = ExtResource("2_frames")
 animation_name = &"idle"

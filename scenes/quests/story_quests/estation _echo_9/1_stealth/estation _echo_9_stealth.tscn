@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://cm0usgfjx4b4i"]
+[gd_scene load_steps=20 format=4 uid="uid://cm0usgfjx4b4i"]
 
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_4bpcw"]
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="2_h6dk7"]
@@ -14,6 +14,7 @@
 [ext_resource type="Resource" uid="uid://24xql2d53m2" path="res://scenes/quests/story_quests/estation _echo_9/1_stealth/stealth_components/estation _echo_9_collected.dialogue" id="12_6hs5t"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="13_pf5gk"]
 [ext_resource type="Resource" uid="uid://c500ngrme5m14" path="res://scenes/quests/story_quests/estation _echo_9/1_stealth/stealth_components/estation _echo_9_stealth.dialogue" id="14_vbgfs"]
+[ext_resource type="TileSet" path="res://scenes/quests/story_quests/estation _echo_9/estation _echo_9_tech_tileset.tres" id="99_echo9tech"]
 
 [sub_resource type="Curve2D" id="Curve2D_2o4xt"]
 _data = {
@@ -120,3 +121,16 @@ collected_dialogue = ExtResource("12_6hs5t")
 script = ExtResource("13_pf5gk")
 dialogue = ExtResource("14_vbgfs")
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
+
+[node name="TileNew" type="Node2D" parent="."]
+scale = Vector2(2, 2)
+
+[node name="SAnd" type="TileMapLayer" parent="TileNew"]
+z_index = -1
+scale = Vector2(2, 2)
+tile_set = ExtResource("99_echo9tech")
+
+[node name="Pared" type="TileMapLayer" parent="TileNew"]
+z_index = -1
+scale = Vector2(2, 2)
+tile_set = ExtResource("99_echo9tech")
